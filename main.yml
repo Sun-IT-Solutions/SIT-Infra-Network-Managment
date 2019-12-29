@@ -64,14 +64,311 @@ Resources:
 
   # The only subnet we will create within our VPC, our OpenVPN server will be provisioned within
   # This subnet will be assigned a default route out to the internet, hence the name.
-  MyPublicSubnet:
+  # MyPublicSubnet1:
+  #   Type: AWS::EC2::Subnet
+  #   Properties:
+  #     VpcId: !Ref OpenVPNVPC
+  #     CidrBlock: 10.88.24.0/29 # 8-bit subnet provides 256 addresses, 251 of which are usable
+  #     Tags:
+  #     - Key: Name
+  #       Value: SIT-Public-Subnet-1
+  #
+  # MyPublicSubnet1:
+  #   Type: AWS::EC2::Subnet
+  #   Properties:
+  #     VpcId: !Ref OpenVPNVPC
+  #     CidrBlock: 10.22.8.0/26 # 8-bit subnet provides 256 addresses, 251 of which are usable
+  #     Tags:
+  #     - Key: Name
+  #       Value: SIT-Public-Subnet-1
+
+Subnet1:
+    Type: AWS::EC2::Subnet
+    Properties:EC2::Subnet
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.0/29
+      Tags:lock: 10.88.24.0/29
+      - Key: Name
+        Value: SIT-Public-Subnet-1
+
+Subnet2:
+    Type: AWS::EC2::Subnet
+    Properties:EC2::Subnet
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.8/29
+      Tags:lock: 10.88.24.8/29
+      - Key: Name
+        Value: SIT-Public-Subnet-2
+
+Subnet3:
     Type: AWS::EC2::Subnet
     Properties:
       VpcId: !Ref OpenVPNVPC
-      CidrBlock: 10.22.8.0/26 # 8-bit subnet provides 256 addresses, 251 of which are usable
+      CidrBlock: 10.88.24.16/29
       Tags:
       - Key: Name
-        Value: SIT-PublicRoute-Subnet
+        Value: SIT-Public-Subnet-3
+
+Subnet4:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.24/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-4
+
+Subnet5:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.32/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-5
+
+Subnet6:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.40/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-6
+
+Subnet7:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.48/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-7
+
+Subnet8:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.56/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-8
+
+Subnet9:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.64/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-9
+
+Subnet10:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.72/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-10
+
+Subnet11:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.80/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-11
+
+Subnet12:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.88/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-12
+
+Subnet13:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.96/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-13
+
+Subnet14:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.104/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-14
+
+Subnet15:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.112/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-15
+
+Subnet16:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.120/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-16
+
+Subnet17:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.128/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-17
+
+Subnet18:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.136/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-18
+
+Subnet19:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.144/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-19
+
+Subnet20:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.152/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-20
+
+Subnet21:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.160/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-21
+
+Subnet22:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.168/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-22
+
+Subnet23:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.176/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-23
+
+Subnet24:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.184/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-24
+
+Subnet25:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.192/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-25
+
+Subnet26:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.200/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-26
+
+Subnet27:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.208/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-27
+
+Subnet28:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.216/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-28
+
+Subnet29:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.224/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-29
+
+Subnet30:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.232/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-30
+
+Subnet31:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.240/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-31
+
+Subnet32:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OpenVPNVPC
+      CidrBlock: 10.88.24.248/29
+      Tags:
+      - Key: Name
+        Value: SIT-Public-Subnet-32
 
   # We will need our VPC to have access to the internet
   myInternetGateway:
